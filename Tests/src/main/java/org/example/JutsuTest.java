@@ -7,14 +7,14 @@ public class JutsuTest extends TestBase {
   @Test
   public void jutsuTestLogin() {
     applicationManager.getNavigationHelper().openHomePage();
-    applicationManager.getLoginHelper().login(new Account("DaniskaNaruto", "daniska"));
+    applicationManager.getLoginHelper().login(new Account("PoshKamil", "danisdanis"));
 
   }
 
   @Test
   public void jutsuTestSendMessage() {
     applicationManager.getNavigationHelper().openHomePage();
-    applicationManager.getLoginHelper().login(new Account("DaniskaNaruto", "daniska"));
+    applicationManager.getLoginHelper().login(new Account("PoshKamil", "danisdanis"));
     applicationManager.getMessageHelper().sendMessage(new Message("Danis"));
 
   }

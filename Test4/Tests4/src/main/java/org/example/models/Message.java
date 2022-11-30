@@ -1,5 +1,4 @@
-package org.example;
-
+package org.example.models;
 
 public class Message {
     private String textMessage;
@@ -12,14 +11,6 @@ public class Message {
     public Message(String textMessage, String to) {
         this.textMessage = textMessage;
         this.to = to;
-    }
-
-    @Override
-    public String toString() {
-        return "Message{" +
-                "textMessage='" + textMessage + '\'' +
-                ", to='" + to + '\'' +
-                '}';
     }
 
     public String getTextMessage() {
@@ -36,5 +27,13 @@ public class Message {
 
     public void setTo(String to) {
         this.to = to;
+    }
+
+    @Override
+    public String toString() {
+        return "Message{" +
+                "textMessage='" + textMessage + '\'' +
+                ", to='" + to + '\'' +
+                '}';
     }
 }
