@@ -10,7 +10,9 @@ public class LoginTests extends TestBase {
 
     @Test
     public void loginWithValidData() {
-        applicationManager.getLoginHelper().logout();
+        if (applicationManager.getLoginHelper().isLogged()) {
+            applicationManager.getLoginHelper().logout();
+        }
         applicationManager.getNavigationHelper().openHomePage();
         applicationManager.getLoginHelper().login(new Account(getLogin(), getPassword()));
         Assert.assertTrue(applicationManager.getLoginHelper().isLogged());
@@ -18,7 +20,9 @@ public class LoginTests extends TestBase {
 
     @Test
     public void loginWithInvalidData() {
-        applicationManager.getLoginHelper().logout();
+        if (applicationManager.getLoginHelper().isLogged()) {
+            applicationManager.getLoginHelper().logout();
+        }
         applicationManager.getNavigationHelper().openHomePage();
         applicationManager.getLoginHelper().login(new Account("Posh", "danis"));
         Assert.assertFalse(applicationManager.getLoginHelper().isLogged());

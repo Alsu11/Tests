@@ -19,7 +19,8 @@ import org.w3c.dom.NodeList;
 
 public class DomParser {
 
-    public List<Message> readXml(String xmlFile) {
+    public List<Message> readXml(String path) {
+        File xmlFile = new File(path);
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder;
 
@@ -46,11 +47,13 @@ public class DomParser {
         }
         return null;
     }
+
     private static String getTagValue(String tag, Element element) {
         NodeList nodeList = element.getElementsByTagName(tag).item(0).getChildNodes();
         Node node = (Node) nodeList.item(0);
         return node.getNodeValue();
     }
+
 
     public String getData(String data, File xmlFile) {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
