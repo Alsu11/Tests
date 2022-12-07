@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72449a5c-f43e-40d4-a982-7bd443f90da7" name="Changes" comment="fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test6/Tests6/src/main/java/org/example/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test6/Tests6/src/main/java/org/example/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test6/Tests6/src/main/java/org/example/generators/DomGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test6/Tests6/src/main/java/org/example/generators/DomGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test6/Tests6/src/main/java/org/example/tests/JutsuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test6/Tests6/src/main/java/org/example/tests/JutsuTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="72449a5c-f43e-40d4-a982-7bd443f90da7" name="Changes" comment="fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669833431896</updated>
       <workItem from="1669833433655" duration="1082000" />
-      <workItem from="1670432004410" duration="2244000" />
+      <workItem from="1670432004410" duration="2558000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1670432471339</created>
