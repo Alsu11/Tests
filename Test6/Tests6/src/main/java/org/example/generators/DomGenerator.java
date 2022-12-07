@@ -42,7 +42,7 @@ public class DomGenerator {
             DOMSource source = new DOMSource(doc);
 
             StreamResult console = new StreamResult(System.out);
-            StreamResult file = new StreamResult(new File("C:\\ProjectsJava\\Tests\\Test6\\Tests6\\src\\main\\resources\\Settings.xml"));
+            StreamResult file = new StreamResult(new File("/home/user/Рабочий стол/MyTests/Tests/Test6/Tests6/src/main/resources/Settings.xml"));
 
             transformer.transform(source, console);
             transformer.transform(source, file);

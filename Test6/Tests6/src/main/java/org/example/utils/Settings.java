@@ -6,7 +6,7 @@ import java.io.File;
 
 public class Settings {
 
-    public static File file = new File("C:\\ProjectsJava\\Tests\\Test6\\Tests6\\src\\main\\resources\\Settings.xml");
+    public static File file = new File("/home/user/Рабочий стол/MyTests/Tests/Test6/Tests6/src/main/resources/Settings.xml");
     public static String baseUrl;
     public static String login;
     public static String password;

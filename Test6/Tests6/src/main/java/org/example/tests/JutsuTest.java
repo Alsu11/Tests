@@ -20,7 +20,7 @@ public class JutsuTest extends AuthBase {
   @DataPoints
   public static List<Message> readXml() {
     DomParser domP = new DomParser();
-    List<Message> messages = domP.readXml("C:\\xml\\messages.xml");
+    List<Message> messages = domP.readXml("/home/user/Рабочий стол/generated_data/messages.xml");
     return messages;
   }
 

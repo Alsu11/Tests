@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72449a5c-f43e-40d4-a982-7bd443f90da7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/tests/JutsuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/tests/JutsuTest.java" afterDir="false" />
+    <list default="true" id="72449a5c-f43e-40d4-a982-7bd443f90da7" name="Changes" comment="fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test6/Tests6/src/main/java/org/example/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test6/Tests6/src/main/java/org/example/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test6/Tests6/src/main/java/org/example/generators/DomGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test6/Tests6/src/main/java/org/example/generators/DomGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test6/Tests6/src/main/java/org/example/tests/JutsuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test6/Tests6/src/main/java/org/example/tests/JutsuTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +36,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/user/Рабочий стол/MyTests/Tests/Test5/Tests5",
+    "last_opened_file_path": "/home/user/Рабочий стол/MyTests/Tests/Test6/Tests6",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -88,8 +90,16 @@
       <option name="presentableId" value="Default" />
       <updated>1669833431896</updated>
       <workItem from="1669833433655" duration="1082000" />
-      <workItem from="1670432004410" duration="372000" />
+      <workItem from="1670432004410" duration="2244000" />
     </task>
+    <task id="LOCAL-00001" summary="fix">
+      <created>1670432471339</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670432471339</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,5 +107,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>

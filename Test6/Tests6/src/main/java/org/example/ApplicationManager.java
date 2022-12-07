@@ -5,8 +5,7 @@ import org.example.helpers.MessageHelper;
 import org.example.helpers.NavigationHelper;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-
+import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,7 +18,8 @@ public class ApplicationManager {
     private NavigationHelper navigationHelper;
     private static ThreadLocal<ApplicationManager> app = new ThreadLocal<>();
     public ApplicationManager() {
-        driver = new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver", "/home/user/Рабочий стол/chromedriver");
+        driver = new ChromeDriver();
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
         loginHelper = new LoginHelper(this);
