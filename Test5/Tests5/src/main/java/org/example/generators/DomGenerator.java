@@ -52,7 +52,7 @@ public class DomGenerator {
 
             //печатаем в консоль или файл
             StreamResult console = new StreamResult(System.out);
-            StreamResult file = new StreamResult(new File("C:\\xml\\messages.xml"));
+            StreamResult file = new StreamResult(new File("/home/user/Рабочий стол/generated_data/messages.xml"));
 
             //записываем данные
             transformer.transform(source, console);

@@ -39,7 +39,7 @@ public class JutsuTest extends AuthBase {
     Assert.assertEquals(message.getTextMessage(), newMessage.getTextMessage());
   }
 
-  //@Test
+  @Test
   public void jutsuTestDeleteMessage() throws InterruptedException {
     Integer count1 = applicationManager.getMessageHelper().countMessages();
     applicationManager.getMessageHelper().deleteMessage();

@@ -54,7 +54,7 @@ public class JutsuTest extends TestBase {
   @DataPoints
   public static List<Message> readXml() {
     DomParser domP = new DomParser();
-    return domP.readXml("C:\\xml\\messages.xml");
+    return domP.readXml("/home/user/Рабочий стол/generated_data/messages.xml");
   }
 
 }
