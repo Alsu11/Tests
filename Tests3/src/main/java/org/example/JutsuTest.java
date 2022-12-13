@@ -8,7 +8,6 @@ public class JutsuTest extends TestBase {
   public void jutsuTestLogin() {
     applicationManager.getNavigationHelper().openHomePage();
     applicationManager.getLoginHelper().login(new Account("PoshKamil", "danisdanis"));
-
   }
 
   @Test

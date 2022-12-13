@@ -1,16 +1,26 @@
 package org.example.models;
 
-public class Message {
-    private String textMessage;
-    private String to;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
-    public Message(String textMessage) {
-        this.textMessage = textMessage;
-    }
+@XmlRootElement(name = "message")
+@XmlAccessorType(XmlAccessType.FIELD)
+public class Message {
+    @XmlElement(name = "text", required = true)
+    private String textMessage;
+    @XmlElement(name = "to", required = true)
+    private String to = "PoshKamil";
 
     public Message(String textMessage, String to) {
         this.textMessage = textMessage;
         this.to = to;
+    }
+
+    public Message(){}
+    public Message(String textMessage) {
+        this.textMessage = textMessage;
     }
 
     public String getTextMessage() {
@@ -21,12 +31,12 @@ public class Message {
         this.textMessage = textMessage;
     }
 
-    public String getTo() {
-        return to;
-    }
-
     public void setTo(String to) {
         this.to = to;
+    }
+
+    public String getTo() {
+        return to;
     }
 
     @Override

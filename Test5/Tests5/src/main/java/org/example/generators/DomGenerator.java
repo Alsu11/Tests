@@ -1,100 +1,53 @@
 package org.example.generators;
 
-import java.io.File;
-import java.util.ArrayList;
+import org.example.models.Message;
+import org.example.models.Messages;
+import org.example.tests.TestBase;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
-
-import org.example.models.Message;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 
 public class DomGenerator {
 
     public static void main(String[] args) {
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder builder;
+
+        Scanner sc = new Scanner(System.in);
+        int count = sc.nextInt();
+        GenerateForCreateMessage(count);
+    }
+
+    private static void GenerateForCreateMessage(int count) {
+        List<Message> messages = new LinkedList<>();
+        for (int i = 0; i < count; i++) {
+            messages.add(new Message(
+                    TestBase.getRandomString(1, 10)
+            ));
+        }
+
+        try (FileWriter fileWriter = new FileWriter("/home/user/Рабочий стол/MyTests/Tests/Test5/Tests5/src/main/java/org/example/generators/create_message.xml")) {
+            writeIdeasToXmlFile(messages, fileWriter);
+        } catch (IOException exception) {
+            throw new RuntimeException(exception);
+        }
+    }
+
+    private static void writeIdeasToXmlFile(List<Message> messageList, FileWriter fileWriter) {
         try {
-            builder = factory.newDocumentBuilder();
-
-            // создаем пустой объект Document, в котором будем создавать наш xml-файл
-            Document doc = builder.newDocument();
-
-            // создаем корневой элемент
-            Element rootElement =
-                    doc.createElementNS("http://www.w3.org/2001/XMLSchema-instance", "Messages");
-
-            // добавляем корневой элемент в объект Document
-            doc.appendChild(rootElement);
-
-            // добавляем дочерние элементы в файл
-            List<Message> messages = inputData();
-            for(Integer i = 0; i < messages.size(); i++) {
-                Message message = messages.get(i);
-                rootElement.appendChild(getLanguage(doc, i.toString(), message.getTextMessage(), "PoshKamil"));
-            }
-
-            //создаем объект TransformerFactory для печати в консоль
-            TransformerFactory transformerFactory = TransformerFactory.newInstance();
-            Transformer transformer = transformerFactory.newTransformer();
-            // для красивого вывода в консоль
-            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-            DOMSource source = new DOMSource(doc);
-
-            //печатаем в консоль или файл
-            StreamResult console = new StreamResult(System.out);
-            StreamResult file = new StreamResult(new File("/home/user/Рабочий стол/generated_data/messages.xml"));
-
-            //записываем данные
-            transformer.transform(source, console);
-            transformer.transform(source, file);
-            System.out.println("Создание XML файла закончено");
-
-        } catch (Exception e) {
-            e.printStackTrace();
+            Messages messages = new Messages();
+            messages.setMessages(messageList);
+            JAXBContext jaxbContext = JAXBContext.newInstance(Messages.class);
+            Marshaller marshaller = jaxbContext.createMarshaller();
+            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+            marshaller.marshal(messages, fileWriter);
+        } catch (JAXBException e) {
+            throw new RuntimeException(e);
         }
-    }
-
-    // метод для создания нового узла XML-файла
-    private static Node getLanguage(Document doc, String id, String messageText, String to) {
-        Element language = doc.createElement("Message");
-
-        // устанавливаем атрибут id
-        language.setAttribute("id", id);
-
-        // создаем элемент message
-        language.appendChild(getLanguageElements(doc, language, "message", messageText));
-
-        // создаем элемент to
-        language.appendChild(getLanguageElements(doc, language, "to", to));
-        return language;
-    }
-
-
-    // утилитный метод для создание нового узла XML-файла
-    private static Node getLanguageElements(Document doc, Element element, String name, String value) {
-        Element node = doc.createElement(name);
-        node.appendChild(doc.createTextNode(value));
-        return node;
-    }
-
-    private static List<Message> inputData() {
-        List<Message> messages = new ArrayList<>();
-        Scanner scanner = new Scanner(System.in);
-        for (int i = 0; i < 3; i++) {
-            String mess = scanner.next();
-            messages.add(new Message(mess));
-        }
-        return messages;
     }
 
 }

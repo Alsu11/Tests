@@ -4,11 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72449a5c-f43e-40d4-a982-7bd443f90da7" name="Changes" comment="fix" />
+    <list default="true" id="72449a5c-f43e-40d4-a982-7bd443f90da7" name="Changes" comment="fix">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generators/create_message.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test4/Tests4/src/main/java/org/example/tests/JutsuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test4/Tests4/src/main/java/org/example/tests/JutsuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generators/DomGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generators/DomGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tests3/src/main/java/org/example/JutsuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tests3/src/main/java/org/example/JutsuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tests3/src/main/java/org/example/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tests3/src/main/java/org/example/TestBase.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -31,12 +49,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/user/Рабочий стол/MyTests/Tests/Test6/Tests6",
+    "last_opened_file_path": "/home/user/Рабочий стол/TestProject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -85,7 +107,9 @@
       <option name="presentableId" value="Default" />
       <updated>1669833431896</updated>
       <workItem from="1669833433655" duration="1082000" />
-      <workItem from="1670432004410" duration="2558000" />
+      <workItem from="1670432004410" duration="2632000" />
+      <workItem from="1670494688956" duration="1571000" />
+      <workItem from="1670961151958" duration="2689000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1670432471339</created>
