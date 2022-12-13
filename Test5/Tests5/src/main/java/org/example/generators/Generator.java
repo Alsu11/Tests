@@ -13,7 +13,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-public class DomGenerator {
+public class Generator {
 
     public static void main(String[] args) {
 
